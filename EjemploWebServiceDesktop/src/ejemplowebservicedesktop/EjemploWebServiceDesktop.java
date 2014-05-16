@@ -21,7 +21,7 @@ public class EjemploWebServiceDesktop {
         try {
             Weather service = new Weather();
             WeatherSoap weatherSoap = service.getWeatherSoap();
-            String zip = "97867";
+            String zip = "0";
             WeatherReturn resp = weatherSoap.getCityWeatherByZIP(zip);
             System.out.println("Ciudad: " + resp.getCity());
             System.out.println("Temperatura: " + resp.getTemperature());
